@@ -10,7 +10,9 @@ import Contact from "./components/pages/Contact";
 
 import Wrapper from "./components/Wrapper";
 
+import "./reset.css";
 import "./App.css";
+
 
 //import "bootstrap/dist/css/bootstrap.min.css";
 
