@@ -11,6 +11,7 @@ class Contact extends Component {
             email: '',
             subject: '',
             message: '',
+            buttonText: 'Send Message'
           }
     }
     handleChange = event => {
@@ -25,14 +26,17 @@ class Contact extends Component {
           email: '',
           subject: '',
           message: '',
+          buttonText: 'Send Message'
         })
       }
 
     formSubmit = e => {
-        e.preventDefault()
-        const { name, email, subject, message } = this.state
+        e.preventDefault();
+        const { name, email, subject, message } = this.state;
+        this.setState({buttonText: '...sending'});
         let templateParams = {
           from_name: email,
+          name: name,
           to_name: 'hacopian.m@gmail.com',
           subject: subject,
           message_html: message,
@@ -43,7 +47,9 @@ class Contact extends Component {
            templateParams,
           'user_U4jwH00eqO8mBcg3yzJwf'
          )
-         this.resetForm()
+         setTimeout(() => {
+            this.resetForm()
+         }, 2000);
     }
 
 
@@ -67,7 +73,7 @@ class Contact extends Component {
                             <input onChange={this.handleChange} name="email" id="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
                         </div>
                         <div>
-                            <button type="submit" className="btnSubmit">Send Message</button>
+        <button type="submit" className="btnSubmit">{this.state.buttonText}</button>
                         </div>
                     </div>
                 </form>
