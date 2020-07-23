@@ -1,2 +1,2 @@
 # a react protfolio
-link: https://meghedihacopi.netlify.app/ 
+https://meghedihacopi.netlify.app/ 
