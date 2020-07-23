@@ -1,0 +1,183 @@
+:root {
+  --maincolor: #333333;
+}
+
+body {
+  color: var(--maincolor);
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.wrapper{
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+h3{
+  font-variant-caps: petite-caps;
+  margin-bottom: 50px;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.container {
+  padding: 30px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.containerIn {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.logo {
+  padding: 0px 0px 50px 0px;
+  font-family: "Yellowtail", cursive;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--maincolor);
+}
+
+.secondLogo {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.flexDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 733px;
+  margin: 0 auto;
+}
+
+.profileImg {
+  background-image: url("../src/assets/me.jpg");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: center;
+  width: 150px;
+  height: 220px;
+  display: none;
+}
+
+.content {
+  line-height: 1.5;
+  padding: 0px 25px;
+}
+
+.top-menu a {
+  margin: 20px 35px;
+  color: var(--maincolor);
+  letter-spacing: 3px;
+}
+
+.btnsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.btnsDiv a {
+  border: 1px solid #333333;
+  padding: 6px 80px;
+  color: #333333;
+  margin-top: 10px;
+}
+
+#projectsTemplate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+#projectsTemplate img {
+  max-width: 200px;
+  height: auto;
+  border: 4px solid #ccc;
+}
+.project {
+  position: relative;
+}
+
+.projectName {
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 95%;
+  padding: 10px;
+  text-align: center;
+  top: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(102, 102, 102, 1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(102, 102, 102, 1);
+  box-shadow: 0px 2px 5px 0px rgba(102, 102, 102, 1);
+}
+
+.longPic {
+  grid-row: auto / span 2;
+}
+.longPic2 {
+  grid-row: auto / span 3;
+}
+
+hr {
+  max-width: 500px;
+  border: 0;
+  height: 0.8px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/*************Contact Form ************/
+.form-group{
+  position: relative;
+  margin-top: 6px;
+  margin-bottom: 16px; 
+}
+.form-group > div{
+  position: relative;
+  font-size: 14px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+input, textarea {
+  width:100%;
+  padding: 20px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  resize: vertical;
+}
+
+label{
+    position: absolute;
+    top:-8px;
+    left:12px;
+    background-color: #ffffff;
+    padding:0px 5px;
+}
+.btnSubmit{
+    padding: 10px 100px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-form{
+  max-width: 1400px;
+}
