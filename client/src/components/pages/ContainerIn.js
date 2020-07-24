@@ -5,7 +5,7 @@ function ContainerIn(props) {
     <div
       className="containerIn"
     >
-      <div>{props.children}</div>
+      {props.children}
     </div>
   );
 }

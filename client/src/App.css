@@ -75,7 +75,7 @@ a {
 }
 
 .top-menu a {
-  margin: 20px 35px;
+  margin: 20px 3%;
   color: var(--maincolor);
   letter-spacing: 3px;
 }
@@ -146,25 +146,25 @@ hr {
 }
 
 /*************Contact Form ************/
-.form-group{
-  position: relative;
+.contact-form{
+  margin: 0 auto;
   margin-top: 6px;
   margin-bottom: 16px; 
+  max-width: 1000px;
 }
-.form-group > div{
+.contact-form > div{
   position: relative;
   font-size: 14px;
-  width: 80%;
   margin: 0 auto;
   margin-bottom: 25px;
 }
 
 input, textarea {
   width:100%;
-  padding: 20px;  
   border: 1px solid #ccc; 
   border-radius: 4px; 
   resize: vertical;
+  padding: 20px 0px 20px 20px;
 }
 
 label{
@@ -182,5 +182,4 @@ label{
 }
 
 .contact-form{
-  max-width: 1400px;
 }

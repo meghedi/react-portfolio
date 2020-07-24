@@ -59,7 +59,6 @@ class Contact extends Component {
             <ContainerIn>
                 <h3>Contact</h3>
                 <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
-                    <div className="form-group">
                         <div>
                             <label htmlFor="message-input">Message</label>
                             <textarea onChange={this.handleChange} name="message" id="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required />
@@ -75,7 +74,6 @@ class Contact extends Component {
                         <div>
         <button type="submit" className="btnSubmit">{this.state.buttonText}</button>
                         </div>
-                    </div>
                 </form>
             </ContainerIn>
         )
