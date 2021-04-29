@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mongoose
+    versions:
+    - 5.11.14
+    - 5.11.16
+    - 5.11.17
+    - 5.11.19
+    - 5.12.1
+    - 5.12.2
+    - 5.12.3
+    - 5.12.4
+    - 5.12.5
+  - dependency-name: concurrently
+    versions:
+    - 6.0.1
+  - dependency-name: react-bootstrap
+    versions:
+    - 1.5.1
