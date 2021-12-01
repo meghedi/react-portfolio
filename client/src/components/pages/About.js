@@ -9,7 +9,7 @@ function About() {
         <div className="content">
           Meghedi loves programming,
           <p>
-            She has almost 7 years of hands-on experience efficiently coding
+            She has almost 8 years of hands-on experience efficiently coding
             websites and applications as a Software Engineer.
           </p>
           <p>
